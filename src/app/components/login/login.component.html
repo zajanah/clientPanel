@@ -1,0 +1,32 @@
+<div class="row mt-4">
+    <div class="col-md-6 mx-auto">
+
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center">
+                    <sapn class="text-primary">
+                        <i class="fa fa-lock" aria-hidden="true"></i> Login Panel
+                    </sapn>Client
+                </h1>
+
+                <form (ngSubmit)="onLogin()">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="email" id="email" [(ngModel)]="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password"
+                            [(ngModel)]="password">
+                    </div>
+
+                    <input type="submit" value=Login class="btn btn-primary btn-block">
+
+                    <button class="btn btn-danger btn-block" type="button" (click)="onLoginWithGoogle()">
+                        <i class="fa fa-google" aria-hidden="true"></i>  Gougle Account
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
